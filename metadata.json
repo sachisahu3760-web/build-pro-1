@@ -1,0 +1,11 @@
+{
+  "name": "Remix BuildPulse Pro: Construction Project \u0026 Site Management",
+  "description": "Real-time construction management platform tracking materials, worker schedules, live GPS site locations, safety compliance, budget analytics, offline sync, and multi-language support.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

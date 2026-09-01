@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with Safe Margin (Maskable compatible) -->
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  
+  <!-- Outer Glow Ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#f97316" stroke-opacity="0.2" stroke-width="8"/>
+  <circle cx="256" cy="256" r="160" fill="#1e293b" stroke="#334155" stroke-width="4"/>
+
+  <!-- Construction Helmet / Shield Icon -->
+  <g transform="translate(106, 116)">
+    <!-- Base Shield -->
+    <path d="M150 20 C220 20 270 45 280 130 C280 210 180 260 150 280 C120 260 20 210 20 130 C30 45 80 20 150 20 Z" fill="url(#primaryGrad)" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.4))"/>
+    
+    <!-- Hard Hat Crown -->
+    <path d="M80 130 C80 80 120 50 150 50 C180 50 220 80 220 130 Z" fill="#ffffff" fill-opacity="0.95"/>
+    <path d="M60 130 Q150 120 240 130 L245 145 Q150 135 55 145 Z" fill="#ffffff" fill-opacity="0.85"/>
+    
+    <!-- Pulse Line / Pulse Wave -->
+    <path d="M85 180 L115 180 L135 150 L155 210 L175 170 L195 190 L215 180" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Android Pro Badge -->
+  <rect x="186" y="405" width="140" height="34" rx="17" fill="#f97316"/>
+  <text x="256" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">BUILDPULSE</text>
+</svg>

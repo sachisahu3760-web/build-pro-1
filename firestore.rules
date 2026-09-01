@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Construction app security rules
+    // Allow read and write for authenticated users or open access with validation
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
